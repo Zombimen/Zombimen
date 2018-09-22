@@ -338,7 +338,7 @@ input#less:checked ~ label[for="less"] {
 }
 .item {
 	height: 180px;
-	background-color: #ffffff99;
+	background: url("image/cross.svg") #ffffff99;
 	position: relative;
 }
 .item label,
@@ -509,4 +509,12 @@ input#less:checked ~ label[for="less"] {
 	width: 15px;
 	height: 17px;
 	padding-left: 10px;
+}
+.loadmore {
+	display: block;
+	width: 900px;
+	position: absolute;
+	bottom: -50px;
+	text-align: center;
+	color: white;
 }

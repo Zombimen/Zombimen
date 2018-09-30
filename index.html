@@ -3,35 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Demo site</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
 	
-	<div class="bar">
-		<ul class="menu">
-			<li class="logo"><img src="image/icon (3).png">	</li>
-			<li><a href="">Home</a></li>
-			<li class="submenu"><a href="">Produts &#9776;</a>
-				<ul>
-					<li><a href="">Lorem ipsum dolor</a></li>
-					<li><a href="">Sit amet</a></li>
-					<li><a href="">Consectetur adipicing</a></li>
-					<li><a href="">Tempor incididunt</a></li>
-					<li><a href="">Dolore magna aliqua</a></li>
-					<li><a href="">Ut enim ad minim veniam</a></li>
-					<li><a href="">Quis nostrud</a></li>
-				</ul>
-			</li>
-			<li><a href="">Payment</a></li>
-			<li><a href="">Shipping</a></li>
-			<li><div class="search">
-			<input type="search" name="search" placeholder="&#160;search">
-			<input type="button" name="button">
-			</div></li>
-			<li class="basket"><div><a href=""><img src="image/icon1.png"></a></div></li>
-		</ul>
-	</div>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<a class="logo col-md-3" href=""></a>
+				<nav class="menu col-md-6">
+				<ul class="row">
+					<li><a href="">Home</a></li>
+					<li class="submenu"><a href="">Produts &#9776;</a>
+						<ul>
+							<li><a href="">Lorem ipsum dolor</a></li>
+							<li><a href="">Sit amet</a></li>
+							<li><a href="">Consectetur adipicing</a></li>
+							<li><a href="">Tempor incididunt</a></li>
+							<li><a href="">Dolore magna aliqua</a></li>
+							<li><a href="">Ut enim ad minim veniam</a></li>
+							<li><a href="">Quis nostrud</a></li>
+						</ul>
+					</li>
+					<li><a href="">Payment</a></li>
+					<li><a href="">Shipping</a></li>
+					</ul></nav>
+					<div class="wrapper-search col-md-3">
+						<div class="search">
+						<input type="search" name="search" placeholder="&#160;search">
+						<input type="submit" name="button" value=" ">
+						</div>
+						<a class="basket" href=""></a>
+					</div>
+			</div>
+		</div>
+	</header>
 <!--############################################-->
 		<div class="all-slider">
 			<div class="slider">
@@ -133,10 +140,9 @@
 			<div><p>
 			 <a href="">Home Page</a> >
 			 <a href="">Produts</a> >
-			 <a href="">Laptop and Tablets</a>
+			 <a href="">Laptop and Tablets</a></p>
 			</div>
-			<h1>Laptop and Tablets</h1></p>
-			<div></div>
+			<h1>Laptop and Tablets</h1>
 	<div class="items">
 		<div class="item">
 			<img src="image/icon (17).png">
@@ -325,8 +331,9 @@
 		</div>
 		
 	</div>
-		<a class="loadmore" href="">Load more...</a>
 		</div>
+		<a class="loadmore" href="">Load more...</a>
 	</div>
+	<footer>&#xa9; Copyright 2017</footer>
 </body>
 </html>

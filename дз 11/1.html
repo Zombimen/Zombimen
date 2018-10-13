@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		var x = prompt("Введите число");
+		var y = x * x;
+		alert(y);
+
+		var a = prompt("Введите первое число");
+		var b = prompt("Введите второе число");
+		alert(+a + +b);
+		alert(a - b);
+		alert(a * b);
+		alert(a / b);
+
+		var t = prompt("Введите число");
+		var d = Math.trunc(t/86400);
+		var h = Math.trunc(t%86400/3600);
+		var m = Math.trunc(t%86400%3600/60);
+		var s = Math.trunc(t%86400/3600%60/1);
+		alert(d + "day(s)" + h + ":" + m + ":" + s);
+
+
+	</script>
+	
+</body>
+</html>

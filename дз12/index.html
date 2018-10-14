@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = prompt("Введите пору года");
+		var x = x.toLowerCase()
+		if (x == "весна" || x == "лето" || x == "осень" || x == "зима") {
+			alert("Сейчас " + x)
+		}
+		else {
+			alert("Это не пора года")
+		};
+		
+		var y = prompt("Введите пору года(T)");
+		var y = y.toLowerCase();
+		(y == "весна" || y == "лето" || y == "осень" || y == "зима") ?
+		 alert("Сейчас " + y) : alert("Это не пора года");
+
+		var z = +prompt("Введите число 1 до 59");
+		if (z >= 1 && z <= 15) {
+			alert("Первая чверть")
+		}
+		else if (z > 15 && z <= 30) {
+			alert("Вторая чверть")
+		}
+		else if (z > 30 && z <= 45) {
+			alert("Третья чверть")
+		}
+		else if (z > 45 && z <= 59) {
+			alert("Четвертая чверть")
+		}
+		else {
+			alert("Это не число от 1 до 59")
+		}
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var firstNumber = prompt("Введите первое число")
+		var secondNumber = prompt("Введите второе число")
+		firstNumber > secondNumber ? console.log(firstNumber) : console.log(secondNumber)
+
+		var userPrice = +prompt("Введите сумму покупок");
+
+		function potato () {
+
+		if (userPrice<=1000) {
+			var percentageDiscount = 3
+		}
+		else if (userPrice>1000 && userPrice<=5000) {
+			var percentageDiscount = 5
+		}
+		else if (userPrice>5000 && userPrice<=10000) {
+			var percentageDiscount = 7
+		}
+		else if (userPrice>10000) 
+			var percentageDiscount = 10;
+
+		var fullPrice = userPrice - userPrice / 100 * percentageDiscount;
+		 var discMessenge="Сума со скидкой составляет" + " " + fullPrice + "грн";
+		 return discMessenge;
+		}
+		console.log(potato(userPrice))
+
+		var sumItem = +prompt("Введите количество товара")
+		var itemPrice = +prompt("Введите cтоимость единицы товара")
+		function allItemsPrice() {
+			var fullPrice = sumItem * itemPrice;
+			var messenge = "Стоимость единици товара" + " " + itemPrice + "." + "Сума" + " " + fullPrice + ".";
+			return messenge
+		}
+			console.log(allItemsPrice(sumItem, itemPrice))
+
+
+	</script>
+	
+</body>
+</html>

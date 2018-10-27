@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="like" style="width: 30px; height: 30px; background: grey url(icon2.png) no-repeat 50% 50%;"></div>
+
+	<span id="count">0</span>
+
+	<script type="text/javascript">
+		var count = document.getElementById("count");
+		var like = document.getElementById("like");
+		like.addEventListener("click", function() {
+
+			if (count.textContent == 0) {
+			like.style.background = "grey url(icon1.png) no-repeat 50% 50%" ;
+			count.textContent = 1 }
+			else if (count.textContent == 1) {
+			like.style.background = "grey url(icon2.png) no-repeat 50% 50%" ;
+
+			count.textContent = 0
+		}})		
+			
+
+	</script>
+</body>
+</html> 

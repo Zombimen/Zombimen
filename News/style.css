@@ -1,0 +1,311 @@
+html {
+	box-sizing: border-box;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+.float {
+	float: left;
+}
+.floatR {
+	float: right;
+}
+.all {
+	width: 940px;
+	height: 2000px;
+	margin: 10px 20px 0px 20px;
+}
+.bar, .bar-left, .bar-right {
+	height: 63px;
+	display: inline-block;
+}
+.bar {
+	width: 940px;
+}
+.bar-left {
+	float: left;
+	width: 670px;
+}
+.bar-right {
+	float: right;
+	width: 250px;
+	margin-left: 20px;
+}
+.logo {
+	width: 250px;
+	height: inherit;
+	background: url("src/logo.jpg") 100% no-repeat;
+	display: inline-block;
+
+}
+.menu {
+	background: white;
+	width: 375px;
+	height: inherit;
+	float: right;
+}
+.menu ul {
+	position: relative;
+	top: 47px;
+}
+.both:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+ ul.both li{
+	float: left;
+}
+.menu ul li a {
+	color: red;
+	border-left: 1px solid black;
+	text-align: center;
+	display: block;
+	width: 75px;
+}
+.submenu {
+	width: 940px;
+	height: 65px;
+}
+.submenu ul {
+	height: 45px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+	background-color: black;
+	line-height: 45px;
+}
+.submenu ul li {
+	padding-left: 30px;
+	text-align: center;
+}
+.submenu a {
+	color: white;
+}
+.bar-right {
+	position: absolute;
+}
+.search {
+	position: absolute;
+	bottom: 0px;
+}
+[type*=search] {
+	background: transparent;
+	border: 1px solid black;
+	height: 28px;
+	width: 220px;
+	float: left;
+}
+.search [type*=submit] {
+	width: 30px;
+	height: 28px;
+	background: url(src/search-button.jpg);
+	border: none;
+	
+}
+.slider-with-breaking-news {
+	width: 670px;
+	height: 335px;
+	padding-bottom: 20px;
+	background: grey;
+	margin-bottom: 10px;
+}
+.main {
+	width: 670px;
+	height: 1179px;
+}
+.main-left {
+	width: 460px;
+}
+.main-right {
+	padding-left: 20px;
+	width: 190px;
+}
+div.more {
+	font-weight: 700;
+}
+.more {
+	height: 27px;
+	border-bottom: red solid 2px;
+	position: relative;
+}
+.more a {
+	width: 60px;
+	height: 18px;
+	background: red;
+	display: block;
+	position: absolute;
+	color: white;
+	font-weight: 100;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+	line-height: 20px;
+
+}
+.from-around-the-world {
+	height: 350px;
+}
+div.fatw-and-la-blocks {
+	height: 300px;
+	width: 33.3%;
+	padding-right: 9px;
+}
+div.fatw-and-la-blocks:last-child {
+	padding: 0px;
+}
+.fatw-and-la-blocks img{
+	height: 100px;
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+.fatw-and-la-blocks a {
+	display: block;
+	padding-top: 20px;
+}
+.gallery img {
+	width: 33.33%;
+	padding-right: 10px;
+	float: left;
+}
+.gallery img:nth-child(3),
+.gallery img:nth-child(6) {
+	padding: 0;
+
+}
+.main-right {
+	width: 210px;
+}
+.tech-news-blocks {
+	width: 50%;
+	padding: 10px;
+}
+.tech-news-blocks span:first-child {
+	font-weight: 600;
+}
+.tech-news .tech-news-blocks:nth-child(2),
+.tech-news .tech-news-blocks:nth-child(3) {
+	border-bottom: dotted 1px black;
+}
+.ftd-blocks {
+	padding-top: 20px;
+	border-bottom: dotted 1px black;
+}
+.ftd-blocks div {
+	padding: 20px 0 20px 0;
+}
+.ftd-blocks span {
+	font-weight: 600;
+
+}
+.ftd-blocks:last-child {
+	border: none;
+}
+.more2,
+.more2 a{
+	left: 0px;
+	border: none;
+}
+.edit-blocks a {
+	display: block;
+	margin: 5px 0 5px 0;
+}
+.video {
+	height: 315px;
+	width: 250px;
+	border: none;
+	margin-bottom: 20px;
+}
+.video div {
+	padding: 5px;
+	border: none;
+	background: #e4e4e4;
+}
+.video img {
+	float: left;
+	padding-right: 5px;
+}
+.video p {
+	padding-top: 5px;
+}
+.ad {
+	width: 250px;
+	height: 230px;
+	background: url("src/ad.jpg") no-repeat;
+	margin-bottom: 20px;
+}
+.sign {
+	background: #e4e4e4;
+}
+.sign span,
+.sign p {
+	text-align: center;
+}
+.sign span {
+	padding: 10px;
+	display: block;
+	font-weight: 700;
+}
+.sign p {
+	margin-bottom: 20px;
+}
+.sign [type*=text],
+.sign [type*=email] {
+	display: block;
+	height: 25px;
+
+}
+.sign form {
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+}
+.sign [type*=submit] {
+	width: 100px;
+	height: 25px;
+	background: red;
+	color: white;
+	border: none;
+	margin-top: 10px;
+	position: relative;
+}
+.sign p:last-child {
+	color: red;
+	padding: 10px 0 20px 0;
+}
+.popular span {
+	font-weight: 700;
+}
+.popular span:first-child {
+	float: left;
+	color: red;
+}
+.popular span:last-child {
+	float: right;
+}
+.popular p {
+	border-bottom: 2px red solid;
+}
+.popular-blocks {
+	width: 250px;
+	height: 80px;
+}
+.popular-blocks i {
+	font-style: italic;
+}
+.popular-blocks b {
+	font-weight: 600;
+}
+.subscribe {
+	width: 250px;
+	height: 130px;
+	margin-top: 40px;
+	background: url("src/subscribe.jpg");
+}

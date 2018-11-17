@@ -15,13 +15,11 @@ a {
 .float {
 	float: left;
 }
-.floatR {
-	float: right;
-}
-.all {
+.wrap {
 	width: 940px;
-	height: 2000px;
+	padding-bottom: 100px;
 	margin: 10px 20px 0px 20px;
+	border-bottom: 1px dotted black;
 }
 .bar, .bar-left, .bar-right {
 	height: 63px;
@@ -71,6 +69,9 @@ a {
 	display: block;
 	width: 75px;
 }
+.menu ul li:first-child a {
+	border: none;
+}
 .submenu {
 	width: 940px;
 	height: 65px;
@@ -92,9 +93,56 @@ a {
 .bar-right {
 	position: absolute;
 }
+.sm {
+	display: flex;
+	justify-content: space-between;
+}
+.sm div [type*=button] {
+	height: 25px;
+	width: 25px;
+	border: none;
+}
+.sm div:first-child [type*=button] {
+	background: url("src/sm1.jpg") no-repeat;
+	background-size: 100% auto;
+}
+.sm div:nth-child(2) [type*=button] {
+	background: url("src/sm2.jpg") no-repeat;
+}
+.sm div:nth-child(3) [type*=button] {
+	background: url("src/sm3.jpg") no-repeat;
+}
+.with-counter1 div:first-child {
+	background: url("src/sm4.jpg") no-repeat;
+	width: 50px;
+	height: 25px;
+}
+.with-counter2 div:first-child {
+	background: url("src/sm5.jpg") no-repeat;
+	width: 31px;
+	height: 20px;
+	margin-top: 3px;
+}
+.with-counter1,
+.with-counter2 {
+	width: 75px;
+}
+.with-counter1 div,
+.with-counter2 div {
+	float: left;
+}
+.counter {
+	background: url("src/sm6.jpg") no-repeat;
+	background-size: 100% auto;
+	text-align: center;
+	height: 18px;
+	width: 25px;
+	line-height: 20px;
+	margin: 3px 0;
+}
 .search {
 	position: absolute;
-	bottom: 0px;
+	bottom: 0px; 
 }
 [type*=search] {
 	background: transparent;
@@ -125,14 +173,14 @@ a {
 	width: 460px;
 }
 .main-right {
-	padding-left: 20px;
+	margin-left: 20px;
 	width: 190px;
 }
 div.more {
 	font-weight: 700;
 }
 .more {
-	height: 27px;
+	padding-bottom: 5px;
 	border-bottom: red solid 2px;
 	position: relative;
 }
@@ -150,11 +198,12 @@ div.more {
 	line-height: 20px;
 
 }
-.from-around-the-world {
-	height: 350px;
+.latest-articles,
+.from-around-the-world,
+.gallery {
+	margin-bottom: 20px;
 }
 div.fatw-and-la-blocks {
-	height: 300px;
 	width: 33.3%;
 	padding-right: 9px;
 }
@@ -163,7 +212,6 @@ div.fatw-and-la-blocks:last-child {
 }
 .fatw-and-la-blocks img{
 	height: 100px;
-	width: 100%;
 	margin: 20px 0 20px 0;
 }
 .fatw-and-la-blocks a {
@@ -172,16 +220,17 @@ div.fatw-and-la-blocks:last-child {
 }
 .gallery img {
 	width: 33.33%;
-	padding-right: 10px;
+	padding: 5px;
 	float: left;
+	height: 100px;
 }
-.gallery img:nth-child(3),
-.gallery img:nth-child(6) {
-	padding: 0;
-
+.gallery img:nth-of-type(3),
+.gallery img:nth-of-type(6) {
+	padding-right: 0;
 }
-.main-right {
-	width: 210px;
+.gallery img:nth-of-type(1),
+.gallery img:nth-of-type(4) {
+	padding-left: 0;
 }
 .tech-news-blocks {
 	width: 50%;
@@ -190,13 +239,27 @@ div.fatw-and-la-blocks:last-child {
 .tech-news-blocks span:first-child {
 	font-weight: 600;
 }
-.tech-news .tech-news-blocks:nth-child(2),
-.tech-news .tech-news-blocks:nth-child(3) {
+.tech-news .tech-news-blocks:nth-of-type(2),
+.tech-news .tech-news-blocks:nth-of-type(3) {
 	border-bottom: dotted 1px black;
+}
+.tech-news .tech-news-blocks:nth-of-type(2),
+.tech-news .tech-news-blocks:nth-of-type(4) {
+	padding-left: 0px;
+}
+.tech-news .tech-news-blocks:nth-of-type(3),
+.tech-news .tech-news-blocks:nth-of-type(5) {
+	padding-right: 0px;
+}
+.from-the-desk {
+	height: 480px;
 }
 .ftd-blocks {
 	padding-top: 20px;
 	border-bottom: dotted 1px black;
+}
+div.ftd-blocks:nth-child(4) {
+	border: none;
 }
 .ftd-blocks div {
 	padding: 20px 0 20px 0;
@@ -213,13 +276,19 @@ div.fatw-and-la-blocks:last-child {
 	left: 0px;
 	border: none;
 }
+.edit-blocks img {
+	max-width: 190px;
+}
 .edit-blocks a {
 	display: block;
 	margin: 5px 0 5px 0;
 }
+aside {
+	margin-left: 15px;
+	width: 250px;
+}
 .video {
 	height: 315px;
-	width: 250px;
 	border: none;
 	margin-bottom: 20px;
 }
@@ -236,7 +305,6 @@ div.fatw-and-la-blocks:last-child {
 	padding-top: 5px;
 }
 .ad {
-	width: 250px;
 	height: 230px;
 	background: url("src/ad.jpg") no-repeat;
 	margin-bottom: 20px;
@@ -294,7 +362,6 @@ div.fatw-and-la-blocks:last-child {
 	border-bottom: 2px red solid;
 }
 .popular-blocks {
-	width: 250px;
 	height: 80px;
 }
 .popular-blocks i {
@@ -303,9 +370,45 @@ div.fatw-and-la-blocks:last-child {
 .popular-blocks b {
 	font-weight: 600;
 }
+.popular-blocks .more {
+
+}
 .subscribe {
-	width: 250px;
 	height: 130px;
 	margin-top: 40px;
 	background: url("src/subscribe.jpg");
+}
+footer {
+	width: 940px;
+	margin: 0 20px 0 20px;
+}
+footer a {
+	text-align: center;
+	color: black;
+	padding: 10px;
+
+}
+footer li:first-child {
+	border: none;
+}
+footer li {
+	border-left: 1px solid black;
+}
+footer ul {
+	width: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 20px auto;
+}
+footer div.ad2 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	height: 145px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px dotted black;
+}
+address {
+	text-align: center
 }
